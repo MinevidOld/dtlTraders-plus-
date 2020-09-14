@@ -1,0 +1,113 @@
+General:
+    no-permission: "&cSorry! Dafür hast du keine Berechtigung!"
+    prefix: "&bdtlTraders > "
+    buy-price-format: '&7Kaufpreis: &a%price%'
+    sell-price-format: '&7Verkaufspreis: &a%price%'
+    price-format: "$#0.00"
+    buy-action: "kaufen"
+    sell-action: "verkaufen"
+    trade-action: "handeln"
+Errors:
+    contains-space: "Leerzeichen sind nicht erlaubt!"
+    default-shop-set-trader-disabled: "&cDer Standardshop kann nicht geändert werden, da kein anderer Shop aktiviert ist!"
+    shop-disabled-no-other-shop-enabled: "&cKein anderer Shop deaktiviert. Händler deaktiviert!"
+    rows-less-than-zero: "&cDie Anzahl der Zeilen darf nicht kleiner oder gleich null sein!"
+    rows-more-than-six: "&cEs gibt nicht mehr als 6 Zeilen!"
+    invalid-number: "&c%input% keine zulässige Zahl!"
+    negative-percentage: "&cProzentzahlen dürfen nicht negativ sein!"
+    invalid-percentage: "&c%input% ist eine ungültige Prozentzahl!"
+    negative-price: "&cPreise dürfen nicht negativ sein!"
+    invalid-price: "&c%input% ist ein ungültiger Preis!"
+    discount-price-higher: "&cRabattpreise dürfen nicht größer als die normalen Preise sein!"
+    invalid-time-format: "&cUngültiges Zeitformat! Beispiele: 8h, 7d, etc!"
+    discount-0-seconds: "&cRabatte sollten wenigstens 1 Sekunde lang gelten!"
+    no-commands-found: "&cKeine Befehle gefunden!"
+    not-a-number: "&c%input% ist keine Zahl!"
+    invalid-gui-name: "&c%input% ist kein gültiger GUI-Name!"
+    not-a-shop-gui: "&c%input% ist keine Shop-GUI!"
+
+Transactions:
+    no-permission: "&cDu hast keine Berechtigung, dieses Item zu %action%!"
+    trade-limit-reached: "&cDu hast das Handelslimit erreicht! Komme in %time% wieder."
+    insufficient-items: "&cDu hast nicht genug Items, um dieses Item zu %action%!"
+    insufficient-funds: "&cDu hast nicht genügend Geld! Dir fehlen noch %needed%!"
+    no-inventory-space: "&cDein Inventar ist zu voll dafür!"
+    bought-item: "&aErfolgreich %item% für %price% gekauft."
+    sold-item: "&aErfolgreich %item% für %price% verkauft."
+    traded-item: "&aErfolgreich gehandelt!"
+NPC:
+    gui-link: "&aVerknüpfe diesen NPC mit der GUI &e%shop% &a!"
+    no-gui-attached: "&cEs ist keine GUI mit diesem NPC verknüpft!"
+    trait-added: "&aMerkmal erfolgreich zu NPC %id% hinzugefügt."
+    invalid-npc-id: "&c%input% ist eine ungültige NPC-ID!"
+
+
+Shop:
+    shop-name-changed: "&aShop in &e%shop-name% &aumbenannt."
+    shop-permission-changed: "&aShopberechtigung in &e%shop-permission% &ageändert."
+    shop-command-changed: "&aShopbefehel in &e%shop-command% $ageändert."
+    shop-already-created: "Es existiert bereits ein Shop mit dem Namen %input%!"
+    could-not-find-shop: "&cKeinen Shop mit dem Namen &e%input% &agefunden!"
+    shop-deleted: "&e%shop% &cwurde gelöscht!"
+    shop-disabled: "&cDieser shop ist deaktiviert!"
+    shop-created: "&aShop erstellt!"
+    shop-title: "%shop-name% - %page-name% - %shop-mode%"
+    shop-mode-buy: "Ankauf"
+    shop-mode-sell: "Verkauf"
+    shop-mode-trade: "Handel"
+
+Page:
+    page-name-changed: "&aShopname in &e%page-name% &ageändert."
+    page-size-changed: "&aSeitengröße in &e%page-size% &ageändert."
+    page-permission-changed: "&aSeitenberechtigung in &e%page-permission% &ageändert."
+    page-already-created: "%input% wird bereits in diesem Shop benutzt!"
+    page-deleted: "&e%page-name% &gelöscht!"
+
+Mirror:
+    buy-shop-copied: "&aKaufshop kopiert!"
+    sell-shop-copied: "&aVerkaufshop kopiert!"
+    trade-shop-copied: "&aHandelsshop kopiert!"
+    buy-shop-pasted: "&aIn diesen Kaufshop kopiert."
+    sell-shop-pasted: "&aIn diesen Verkaufsshop kopiert."
+    trade-shop-pasted: "&aIn diesen Handelsshop kopiert."
+
+Items:
+    broadcast-message-changed: "&aBroadcast-Nachricht geändert in %message%"
+    trade-limit-time-changed: "&aHandelslimit in &e%limit-time% &ageändert"
+    trade-limit-changed: "&aHandelslimit in %limit% &ageändert"
+    item-name-changed: "&aItemname in %name% &ageändert"
+    item-permission-changed: "&aItemberechtigung in %permission% &ageändert"
+    description-deleted: "&c%line% gelöscht!"
+    description-added: "&a%line% erstellt!"
+    description-changed: "&aZeile der Beschreibung in %line% &ageändert"
+    command-deleted: "&c%command% entfernt!"
+    command-added: "&a%command% hinzugefügt!"
+    command-changed: "&aBefehl in %command% &ageändert"
+
+
+
+#Display item keys (!ONLY TRADABLE & COMMANDS ITEM!)
+#Trade item will soon follow
+#Only change the text behind the ":" mark. Don't change the key in front
+#Possible placeholders which will be replaced:
+#%price% = will be replaced by the set Trade price
+#%discount_start% = will be replaced by the start of the discount (date)
+#%discount_price% = will be replaced by the discount price (if a discount price is set)
+#%discount_duration% will be replaced by the duration in seconds
+#%discount_end% will be replaced by the end of the discount (date)
+#%trade_player% = will be replaced by the already bought amount of the player
+#%trade_limit_max% = will be replaced by the set limit
+#%trade_limit_time_left% will be replaced by the time left until the limit is being reset
+Display-items:
+    price: "&3Preis: &e%price%"
+    discount-start: "&7Rabatt ab: &6%discount_start%"
+    discount-price: "&bRabatt: &c%discount_price%"
+    discount-duration: "&bRabattdauer: %discount_duration%"
+    discount-end: "&bRabatt endet: %discount_end%"
+    trade-limit: "%trade_player%/%trade_limit_max%"
+    trade-limit-seconds: "Verbl. Sekunden: %trade_limit_time_left%"
+    obtainable-items: "&bVerfügbare Items:"
+    needed-items: "&bBenötigte Items:"
+    trade-price: "&aHandelspreis: %trade-price%"
+
+    
