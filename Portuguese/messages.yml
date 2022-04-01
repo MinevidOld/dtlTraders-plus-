@@ -1,0 +1,116 @@
+General:
+    no-permission: "&cDesculpe! Você não tem permissão para fazer isso!"
+    prefix: "&bdtlTraders > "
+    buy-price-format: '&7Preço de Compra: &a$%price%'
+    sell-price-format: '&7Preço de Venda: &a$%price%'
+    price-format: "#0.00"
+    buy-action: ""
+    sell-action: ""
+    trade-action: ""
+Errors:
+    contains-space: "Isso não pode conter espaços"
+    default-shop-set-trader-disabled: "&cNão é possível alterar a loja padrão, pois não há outra loja habilitada"
+    shop-disabled-no-other-shop-enabled: "&cNenhuma outra loja ativa. Comerciante desativado!"
+    rows-less-than-zero: "&cA linha não pode ser menor ou igual a zero!"
+    rows-more-than-six: "&cAs linhas não podem ter mais de 6"
+    invalid-number: "&c%input% é um número inválido!"
+    negative-percentage: "&cPorcentagem não pode ser negativa!"
+    invalid-percentage: "&c%input% é uma porcentagem inválida"
+    negative-price: "&cPreço não pode ser negativo"
+    invalid-price: "&c%input% é um preço inválido"
+    discount-price-higher: "&cO valor do desconto não pode ser maior que o valor do item"
+    invalid-time-format: "&cFormato de tempo inválido! Exemplo: 8h, 7d, etc!"
+    discount-0-seconds: "&cUm desconto deve durar pelo menos 1 segundo"
+    no-commands-found: "&cnenhum comando encontrado!"
+    not-a-number: "&c%input% não é um número"
+    invalid-gui-name: "&c%input% é um nome de GUI inválido!"
+    not-a-shop-gui: "&c%input% não é uma LOJA GUI!"
+
+Transactions:
+    no-permission: "&cVocê não tem permissão para %action% esse item!"
+    trade-limit-reached: "&cVocê atingiu o limite de Troca! Volte em %time%"
+    insufficient-items: "&cVocê não tem itens suficiente para %action% esse item!"
+    insufficient-funds: "&cVocê não tem dinheio suficiente para comprar isso! Você precisa de mais %needed%!"
+    no-inventory-space: "&cVocê não tem espaço suficiente no inventário!"
+    bought-item: "&aSucesso ao comprar %item% por %price%"
+    sold-item: "&aSucesso ao vender %item% por %price%"
+    traded-item: "&aSucesso ao Trocar!"
+NPC:
+    gui-link: "&aAssociando esse NPC com a GUI &e%shop% &a!"
+    no-gui-attached: "&cNão há nenhuma GUI associada a esse NPC!"
+    trait-added: "&aLoja adicionada com sucesso ao NPC %id%"
+    invalid-npc-id: "&c%input% não é um ID válido de NPC!"
+
+
+Shop:
+    shop-name-changed: "&aNome da loja trocado para: &e%shop-name%"
+    shop-permission-changed: "&aPermissão da loja trocada para: &e%shop-permission%"
+    shop-command-changed: "&aComando da loja trocado para: &e%shop-command%"
+    shop-already-created: "%input% já existe uma loja com esse nome"
+    could-not-find-shop: "&cNão foi possivél encontrar uma loja com o nome: %input%"
+    shop-deleted: "&e%shop% &cDeletado!"
+    shop-disabled: "&cEssa loja está desabilitada!"
+    shop-created: "&aLoja Criada!"
+    shop-title: "%shop-name% - %page-name% - %shop-mode%"
+    shop-mode-buy: "Compra"
+    shop-mode-sell: "Venda"
+    shop-mode-trade: "Troca"
+
+Page:
+    page-name-changed: "&aNome da loja trocado para: &e%page-name%"
+    page-size-changed: "&aTamanho da página trocado para: &e%page-size%"
+    page-permission-changed: "&aPermissão da página trocada para: &e%page-permission%"
+    page-already-created: "%input% Já está em uso nessa loja!"
+    page-deleted: "&e%page-name% &cdeletada!"
+
+Mirror:
+    buy-shop-copied: "&aLoja de Compra Copiada!"
+    sell-shop-copied: "&aLoja de Venda Copiada!"
+    trade-shop-copied: "&aLoja de Troca Copiada!"
+    buy-shop-pasted: "&aColado nesta loja de Compra"
+    sell-shop-pasted: "&aColado nesta loja de Venda"
+    trade-shop-pasted: "&aColado nesta loja de Troca"
+
+Items:
+    broadcast-message-changed: "&aMensagem de transmissão alterada para: %message%"
+    trade-limit-time-changed: "&aLimite de tempo de troca alterado para: %limit-time%"
+    trade-limit-changed: "&aLimite de troca trocado para: %limit%"
+    item-name-changed: "&aNome do item trocado para: %name%"
+    item-permission-changed: "&aPermissão do item trocada para: %permission%"
+    description-deleted: "&c%line% Deletada!"
+    description-added: "&a%line% Criada!"
+    description-changed: "&aLinha de descrição trocada para: %line%"
+    command-deleted: "&c%command% deletado!"
+    command-added: "&a%command% Adicionado!"
+    command-changed: "&aComando trocado para %command%"
+
+
+
+#Display item keys (!ONLY TRADABLE & COMMANDS ITEM!)
+#Trade item will soon follow
+#Only change the text behind the ":" mark. Don't change the key in front
+#Possible placeholders which will be replaced:
+#%price% = will be replaced by the set Trade price
+#%discount_start% = will be replaced by the start of the discount (date)
+#%discount_price% = will be replaced by the discount price (if a discount price is set)
+#%discount_duration% will be replaced by the duration in seconds
+#%discount_end% will be replaced by the end of the discount (date)
+#%trade_player% = will be replaced by the already bought amount of the player
+#%trade_limit_max% = will be replaced by the set limit
+#%trade_limit_time_left% will be replaced by the time left until the limit is being reset
+Display-items:
+    price: "&3Price: &e%price%"
+    discount-start: "&7Disconto começa: &6%discount_start%"
+    discount-price: "&bPreço de desconto: &c%discount_price%"
+    discount-duration: "&bDuração do Desconto: %discount_duration%"
+    discount-end: "&bDesconto acaba: %discount_end%"
+    trade-limit: "%trade_player%/%trade_limit_max%"
+    trade-limit-seconds: "Segundos Restantes: %trade_limit_time_left%"
+    obtainable-items: "&bItens Obtidos:"
+    needed-items: "&bItens necessários:"
+    trade-price: "&aPreço de Troca: %trade-price%"
+
+    
+#Traduzido por Bacate_original
+#Algo de errado me contate pelo discord
+#B・Bacate#7924
