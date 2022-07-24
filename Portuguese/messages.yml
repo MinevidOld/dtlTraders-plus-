@@ -25,6 +25,7 @@ Errors:
     not-a-number: "&c%input% não é um número"
     invalid-gui-name: "&c%input% é um nome de GUI inválido!"
     not-a-shop-gui: "&c%input% não é uma LOJA GUI!"
+    not-holding-item: "&cVocê precisa segurar um item na sua mão!"
 
 Transactions:
     no-permission: "&cVocê não tem permissão para %action% esse item!"
@@ -32,6 +33,7 @@ Transactions:
     insufficient-items: "&cVocê não tem itens suficiente para %action% esse item!"
     insufficient-funds: "&cVocê não tem dinheio suficiente para comprar isso! Você precisa de mais %needed%!"
     no-inventory-space: "&cVocê não tem espaço suficiente no inventário!"
+    item-not-sold: "&cNão pode vender o item por: %reason%"
     bought-item: "&aSucesso ao comprar %item% por %price%"
     sold-item: "&aSucesso ao vender %item% por %price%"
     traded-item: "&aSucesso ao Trocar!"
@@ -40,7 +42,6 @@ NPC:
     no-gui-attached: "&cNão há nenhuma GUI associada a esse NPC!"
     trait-added: "&aLoja adicionada com sucesso ao NPC %id%"
     invalid-npc-id: "&c%input% não é um ID válido de NPC!"
-
 
 Shop:
     shop-name-changed: "&aNome da loja trocado para: &e%shop-name%"
@@ -83,8 +84,7 @@ Items:
     command-deleted: "&c%command% deletado!"
     command-added: "&a%command% Adicionado!"
     command-changed: "&aComando trocado para %command%"
-
-
+    no-permission: "&cVocê não tem permissão para fazer isso!"
 
 #Display item keys (!ONLY TRADABLE & COMMANDS ITEM!)
 #Trade item will soon follow
