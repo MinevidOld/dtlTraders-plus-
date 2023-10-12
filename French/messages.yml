@@ -1,6 +1,6 @@
 General:
   no-permission: '&cVous n''avez pas les permissions pour réaliser cela.'
-  prefix: '&a&lArkadiaTrading > '
+  prefix: "&bdtlTraders > "
   buy-price-format: '&cAcheter à &aÅ%price%'
   sell-price-format: '&bVendre pour &a&lÅ%price%'
   price-format: '0.00 #'
