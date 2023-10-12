@@ -1,1 +1,120 @@
+General:
+  no-permission: '&cVous n''avez pas les permissions pour réaliser cela.'
+  prefix: '&a&lArkadiaTrading > '
+  buy-price-format: '&cAcheter à &aÅ%price%'
+  sell-price-format: '&bVendre pour &a&lÅ%price%'
+  price-format: '0.00 #'
+  buy-action: ''
+  sell-action: ''
+  trade-action: ''
+Errors:
+  contains-space: Ceci ne peut rien contenir
+  default-shop-set-trader-disabled: '&cImpossible de changer le shop de base étant
+    donné que tout les autres shop sont désactivés'
+  shop-disabled-no-other-shop-enabled: '&cAucun autre shop activé. Trader désactivé!'
+  rows-less-than-zero: '&cLe nombre de ligne ne peut pas être inférieur ou égal a
+    0!'
+  rows-more-than-six: '&cLe nombre de ligne ne peut pas être supérieur a 6'
+  invalid-number: '&c%input% est un nombre invalide!'
+  negative-percentage: '&cLes porcentages ne peuvent pas être négatif!'
+  invalid-percentage: '&c%input% est un pourcentage invalide'
+  negative-price: '&cLe prix ne peut pas être négatif'
+  invalid-price: '&c%input% est un prix invalide'
+  discount-price-higher: '&cLe prix de réduction ne peut pas être supérieur au prix
+    de base'
+  invalid-time-format: '&cFormat de temps invalide! Exemples: 8h, 7d, etc!'
+  discount-0-seconds: '&cA les réduction doivent a minimum durer 1 seconde'
+  no-commands-found: '&cAucune commande trouvée!'
+  not-a-number: '&c%input% n''est pas un nombre'
+  invalid-gui-name: '&c%input% est un nom d''interface invalide!'
+  not-a-shop-gui: '&c%input% n''est pas un nom d''interface!'
+  not-holding-item: '&cVous devez tenir un item dans vos mains!'
+
+Transactions:
+  no-permission: '&cVous n''avez pas la permission de %action% cet item!'
+  trade-limit-reached: '&cVous avez atteint la limite d''échange! Revenez dans %time%'
+  insufficient-items: '&cVous ne possédez pas l''item que vous souhaitez vendre.'
+  insufficient-funds: '&cVous n''avez pas assez d''argent pour acheter cet item ! Vous
+    avez besoin de %needed% de plus!'
+  no-inventory-space: '&cVous n''avez pas assez de place dans votre inventaire!'
+  bought-item: '&a%item% acheté avec succès pour un prix de %price%'
+  sold-item: '&a%item% Vendu avec succès pour un prix de %price%'
+  traded-item: '&aÉchangé avec succès!'
+  item-not-sold: '&cCouldn''t sell item because %reason%'
+NPC:
+  gui-link: '&aCe PNJ a été associé avec l''interface &e%shop% &a!'
+  no-gui-attached: '&cIl n''y a pas d''interface associé avec ce PNJ!'
+  trait-added: '&aTrait ajouté avec succès au PNJ %id%'
+  invalid-npc-id: '&c%input% n''est pas un ID de PNJ valide!'
+
+
+Shop:
+  shop-name-changed: '&aNom de shop changé en &e%shop-name%'
+  shop-permission-changed: '&aPermission de shop changé en &e%shop-permission%'
+  shop-command-changed: '&aCommand de shop changé en &e%shop-command%'
+  shop-already-created: '%input% est un nom de shop déja existant'
+  could-not-find-shop: '&cImpossible de trouver le shop avec le nom %input%'
+  shop-deleted: '&e%shop% &csupprimé!'
+  shop-disabled: '&cCe shop est désactivé!'
+  shop-created: '&aShop créé!'
+  shop-title: '&8&l%shop-name% &8- %shop-mode%'
+  shop-mode-buy: acheter
+  shop-mode-sell: "&9&lVENDRE"
+  shop-mode-trade: échanger
+
+Page:
+  page-name-changed: '&aNom de shop changé en &e%page-name%'
+  page-size-changed: '&aTaille de page changé en &e%page-size%'
+  page-permission-changed: '&aPermissions de page changé en &e%page-permission%'
+  page-already-created: '%input% est déja utilisé sur cette page!'
+  page-deleted: '&e%page-name% &csupprimé!'
+
+Mirror:
+  buy-shop-copied: '&aShop d''achat copié!'
+  sell-shop-copied: '&aShop de vente copié!'
+  trade-shop-copied: '&aShope d''échange copié!'
+  buy-shop-pasted: '&aShop d''achat collé'
+  sell-shop-pasted: '&aShop de vente collé'
+  trade-shop-pasted: '&aShop d''échange collé'
+
+Items:
+  broadcast-message-changed: '&aBroadcast message changé en %message%'
+  trade-limit-time-changed: '&aTemps d''échange changé à %limit-time%'
+  trade-limit-changed: '&aLimite d''échange changé à  %limit%'
+  item-name-changed: '&aNom d''item changé en %name%'
+  item-permission-changed: '&aPermission d''item changé en %permission%'
+  description-deleted: '&c%line% supprimé!'
+  description-added: '&a%line% créé!'
+  description-changed: '&aLigne de description changé en %line%'
+  command-deleted: '&c%command% supprimé!'
+  command-added: '&a%command% ajouté!'
+  command-changed: '&aCommande changé en %command%'
+  no-permission: '&cYou don''t have permission for this!'
+
+
+
+# Display item keys (!ONLY TRADABLE & COMMANDS ITEM!)
+# Trade item will soon follow
+# Only change the text behind the ":" mark. Don't change the key in front
+# Possible placeholders which will be replaced:
+# %price% = will be replaced by the set Trade price
+# %discount_start% = will be replaced by the start of the discount (date)
+# %discount_price% = will be replaced by the discount price (if a discount price is set)
+# %discount_duration% will be replaced by the duration in seconds
+# %discount_end% will be replaced by the end of the discount (date)
+# %trade_player% = will be replaced by the already bought amount of the player
+# %trade_limit_max% = will be replaced by the set limit
+# %trade_limit_time_left% will be replaced by the time left until the limit is being reset
+Display-items:
+  price: '%price%'
+  discount-start: '&7Réduction de départ : &6%discount_start%'
+  discount-price: '&bPrix après réduction : &c%discount_price%'
+  discount-duration: '&bDurée de la réduction : %discount_duration%'
+  discount-end: '&bRéduction de fin : %discount_end%'
+  trade-limit: '&6Limite de &e&l%trade_player%&6/&e&l%trade_limit_max%'
+  trade-limit-seconds: '&6Temps restant : &e%trade_limit_time_left%'
+  obtainable-items: '&bItems obtensibles :'
+  needed-items: '&bItem nécessaire :'
+  trade-price: '&aPrix d''échange : %trade-price%'
+
 
