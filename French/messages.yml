@@ -8,20 +8,17 @@ General:
   sell-action: ''
   trade-action: ''
 Errors:
-  contains-space: Ceci ne peut rien contenir
-  default-shop-set-trader-disabled: '&cImpossible de changer le shop de base étant
-    donné que tout les autres shop sont désactivés'
+  contains-space: 'Ceci ne peut rien contenir'
+  default-shop-set-trader-disabled: '&cImpossible de changer le shop de base étant donné que tout les autres shop sont désactivés'
   shop-disabled-no-other-shop-enabled: '&cAucun autre shop activé. Trader désactivé!'
-  rows-less-than-zero: '&cLe nombre de ligne ne peut pas être inférieur ou égal a
-    0!'
+  rows-less-than-zero: '&cLe nombre de ligne ne peut pas être inférieur ou égal a 0!'
   rows-more-than-six: '&cLe nombre de ligne ne peut pas être supérieur a 6'
   invalid-number: '&c%input% est un nombre invalide!'
   negative-percentage: '&cLes porcentages ne peuvent pas être négatif!'
   invalid-percentage: '&c%input% est un pourcentage invalide'
   negative-price: '&cLe prix ne peut pas être négatif'
   invalid-price: '&c%input% est un prix invalide'
-  discount-price-higher: '&cLe prix de réduction ne peut pas être supérieur au prix
-    de base'
+  discount-price-higher: '&cLe prix de réduction ne peut pas être supérieur au prix de base'
   invalid-time-format: '&cFormat de temps invalide! Exemples: 8h, 7d, etc!'
   discount-0-seconds: '&cA les réduction doivent a minimum durer 1 seconde'
   no-commands-found: '&cAucune commande trouvée!'
@@ -34,8 +31,7 @@ Transactions:
   no-permission: '&cVous n''avez pas la permission de %action% cet item!'
   trade-limit-reached: '&cVous avez atteint la limite d''échange! Revenez dans %time%'
   insufficient-items: '&cVous ne possédez pas l''item que vous souhaitez vendre.'
-  insufficient-funds: '&cVous n''avez pas assez d''argent pour acheter cet item ! Vous
-    avez besoin de %needed% de plus!'
+  insufficient-funds: '&cVous n''avez pas assez d''argent pour acheter cet item ! Vous avez besoin de %needed% de plus!'
   no-inventory-space: '&cVous n''avez pas assez de place dans votre inventaire!'
   bought-item: '&a%item% acheté avec succès pour un prix de %price%'
   sold-item: '&a%item% Vendu avec succès pour un prix de %price%'
